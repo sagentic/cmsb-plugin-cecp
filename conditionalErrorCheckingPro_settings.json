@@ -1,0 +1,14 @@
+{
+    "pluginEnabled": true,
+    "logRetentionDays": 30,
+    "maxRulesPerTable": 50,
+    "emailNotifications": false,
+    "notificationEmail": "",
+    "debugMode": false,
+    "excludedTables": [
+        "accounts",
+        "_cron_log",
+        "menugroups",
+        "uploads"
+    ]
+}
