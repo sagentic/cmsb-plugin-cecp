@@ -39,8 +39,8 @@ foreach ($dirsToCheck as $dir) {
 
 if (!$loaded) {
 	// Try alternative path
-	$webadminPath = dirname(__DIR__, 2);
-	$initFile = $webadminPath . '/lib/init.php';
+	$cmsbPath = dirname(__DIR__, 2);
+	$initFile = $cmsbPath . '/lib/init.php';
 	if (file_exists($initFile)) {
 		require_once $initFile;
 		$loaded = true;
@@ -48,7 +48,7 @@ if (!$loaded) {
 }
 
 if (!$loaded) {
-	die("Error: Could not load CMS environment. Run this from the webadmin context.\n");
+	die("Error: Could not load CMS environment. Run this from your CMS Builder installation directory.\n");
 }
 
 global $TABLE_PREFIX;
